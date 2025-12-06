@@ -176,7 +176,7 @@ void main() {
             title: Text('Hello'),
             actions: <Widget>[
               TextButton(
-                child: Icon(Icons.add),
+                child: Text("Show ok"),
                 onPressed: () {
                   print('ok');
                 },

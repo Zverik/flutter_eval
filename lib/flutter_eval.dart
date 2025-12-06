@@ -572,8 +572,6 @@ class FlutterEvalPlugin implements EvalPlugin {
           'package:flutter/src/widgets/basic.dart', 'Center.', $Center.$new)
       ..registerBridgeFunc(
           'package:flutter/src/widgets/basic.dart', 'Builder.', $Builder.$new)
-      ..registerBridgeFunc('package:flutter/src/widgets/icon_data.dart',
-          'IconData.', $IconData.$new)
       ..registerBridgeFunc(
           'package:flutter/src/widgets/icon.dart', 'Icon.', $Icon.$new)
       ..registerBridgeFunc('package:flutter/src/widgets/scroll_view.dart',

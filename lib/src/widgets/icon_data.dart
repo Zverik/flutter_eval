@@ -12,40 +12,11 @@ class $IconData implements $Instance {
   /// dart_eval compile-time class declaration
   static const $declaration = BridgeClassDef(
       BridgeClassType($type, isAbstract: false),
-      constructors: {
-        '': BridgeConstructorDef(
-            BridgeFunctionDef(returns: BridgeTypeAnnotation($type), params: [
-          BridgeParameter('codePoint',
-              BridgeTypeAnnotation(BridgeTypeRef(CoreTypes.int)), false)
-        ], namedParams: [
-          BridgeParameter(
-              'fontFamily',
-              BridgeTypeAnnotation(BridgeTypeRef(CoreTypes.string),
-                  nullable: true),
-              true),
-          BridgeParameter(
-              'fontPackage',
-              BridgeTypeAnnotation(BridgeTypeRef(CoreTypes.string),
-                  nullable: true),
-              true),
-          BridgeParameter('matchTextDirection',
-              BridgeTypeAnnotation(BridgeTypeRef(CoreTypes.bool)), true)
-        ]))
-      },
+      constructors: {},
       wrap: true);
 
   /// Wrap a [IconData] in a [$IconData]
   const $IconData.wrap(this.$value);
-
-  /// Instantiate a new [$IconData] from [args]
-  static $Value? $new(Runtime runtime, $Value? target, List<$Value?> args) {
-    return $IconData.wrap(IconData(
-      args[0]!.$value,
-      fontFamily: args[1]?.$value,
-      fontPackage: args[2]?.$value,
-      matchTextDirection: args[3]?.$value ?? false,
-    ));
-  }
 
   @override
   final IconData $value;
