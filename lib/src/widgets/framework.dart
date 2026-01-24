@@ -432,7 +432,7 @@ class $State$bridge<T extends StatefulWidget> extends State<T>
 
   @override
   void $bridgeSet(String identifier, $Value value) {
-    throw UnimplementedError();
+    throw UnimplementedError('Cannot set "$identifier"');
   }
 
   @override
