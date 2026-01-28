@@ -360,7 +360,7 @@ class $FocusNode implements $Instance {
     return $FocusNode.wrap(
       FocusNode(
         debugLabel: args[0]?.$value,
-        onKeyEvent: (FocusNode node, KeyEvent event) {
+        onKeyEvent: args[1] == null ? null : (FocusNode node, KeyEvent event) {
           return (args[1]! as EvalCallable?)?.call(runtime, null, [
             $FocusNode.wrap(node),
             $KeyEvent.wrap(event),
